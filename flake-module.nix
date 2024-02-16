@@ -449,6 +449,8 @@ in
         inherit (cfg.home) extraSpecialArgs users;
         errorMsg = "needed due to usage of ezLib.darwinImportUserModule";
       });
+
+      inherit readModules;
     };
 
     homeConfigurations = userConfigs
